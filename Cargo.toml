@@ -1,0 +1,25 @@
+[package]
+name = "actix-web-auth"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = "4.9.0"
+argon2 = "0.5.3"
+async-trait = "0.1.83"
+chrono = {version = "0.4.26", features = ["serde"]}
+dotenv = "0.15.0"
+env_logger = "0.11.5"
+futures-util = "0.3.31"
+jsonwebtoken = "9.3.0"
+openssl-probe = "0.1.5"
+serde = {version = "1.0.215", features = ["derive"]}
+serde_json = "1.0.133"
+sqlx = {version = "0.8.2", features = ["tls-native-tls", "runtime-async-std", "postgres", "chrono", "uuid"] }
+utoipa = {version = "5.2.0", features = ["actix_extras", "chrono"]}
+utoipa-rapidoc = {version = "5.0.0", features = ["actix-web"]}
+utoipa-redoc = {version = "5.0.0", features = ["actix-web"]}
+utoipa-swagger-ui = {version = "8.0.3", features = ["actix-web"]}
+uuid = {version = "1.11.0", features = ["serde", "v4"]}
+validator = {version = "0.19.0", features = ["derive"]}
